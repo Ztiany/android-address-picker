@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Androidaddresspicker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Androidaddresspicker" parent="Base.Theme.Androidaddresspicker" />
+
+    <style name="AppTheme.Dialog.Common" parent="Theme.Material3.Light.Dialog">
+        <!-- system attributes -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- androidx attributes -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Common.Transparent">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Common.Floating">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Common.Transparent.Floating">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="AppAnimation.BottomIn" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+</resources>
